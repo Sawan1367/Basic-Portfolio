@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a simple portfolio website built using HTML and CSS.">
+    <!-- <meta name="author" content="Sawan Badhwar"> -->
+    <meta name="keywords" content="portfolio, html, css, javascript, web development, programming, coding">
+    <!-- <meta name="robots" content="index, follow"> -->
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <!-- <meta http-equiv="refresh" content="10"; url=http://example.com"> -->
+    <title>Simple Porfolio using</title>
+</head>
+
+<style>
+    :root {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to top, black, rgb(81, 80, 80));
+    }
+
+    .container-portfolio {
+        margin-left: 300px;
+    }
+
+    form {
+        display: inline;
+    }
+
+    fieldset {
+        background-color: whitesmoke;
+    }
+
+    #setTopMargin {
+        margin-top: -10px;
+    }
+
+    h4 {
+        margin-bottom: 2px;
+    }
+
+    .typeofSkill {
+        display: inline;
+    }
+
+    fieldset {
+        width: 60%;
+
+        & .profile-basics {
+            display: flex;
+
+            & .image {
+                display: inline;
+                /* background-color: red; */
+
+                & img {
+                    margin-top: 20px;
+                    width: 100px;
+                    height: 140px;
+                }
+            }
+
+            & .profile-info {
+                & ul {
+                    list-style: none;
+
+                    & li p {
+                        font-size: 16px;
+                    }
+
+                    & .social-media-links {
+                        & span {
+                            & a {
+                                text-decoration: none;
+                                position: relative;
+                                top: -20px;
+                                left: -10px;
+                            }
+
+                            & .leetcode-img {
+                                width: 100px;
+                                height: 50px;
+                                position: relative;
+                                left: -10px;
+                            }
+
+                            & .leetcode-img:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    td {
+        width: 100px;
+    }
+</style>
+
+<body>
+    <div class="container-portfolio">
+        <form class="form">
+            <fieldset>
+                <legend>Practice Portfolio</legend>
+
+                <!-- Profile Basics -->
+                <div class="profile-basics">
+                    <!-- Portfolio Image -->
+                    <div class="image">
+                        <!-- <img src="/COLLEGE LEARNING/assets/CR7.jpg" alt="Image not available" /> -->
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQE4g1NxbG-Jug/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728800449229?e=1753315200&v=beta&t=S_Mst75hgHs8qWgifqKtrba9dIoueIGSvQU_Vfl-SHs"
+                            alt="">
+                    </div>
+
+                    <!-- Profile Information -->
+                    <div class="profile-info">
+                        <!-- Name of the person -->
+                        <ul>
+                            <li class="name">
+                                <h1>Sawan Badhwar</h1>
+                            </li>
+                            <li class="about">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi dolorem
+                                    eos neque in. Sunt modi autem fuga voluptatem, vel praesentium dignissimos hic
+                                    repudiandae veniam. Error hic ea voluptate accusantium!
+                                </p>
+                            </li>
+                            <li class="social-media-links">
+                                <span class="linkedin">
+                                    <a href="">LinkedIn</a>
+                                </span>
+                                <span class="github">
+                                    <a href="">GitHub</a>
+                                </span>
+                                <span class="leetcode">
+                                    <img src="/COLLEGE LEARNING/assets/leetcode.png" alt="LeetCode"
+                                        class="leetcode-img" />
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Education -->
+                <section class="education">
+                    <div class="edu-title">
+                        <h2>EDUCATION</h2>
+                    </div>
+                    <!-- Experience Information -->
+                    <div class="edu-info">
+                        <!-- College -->
+                        <div class="college">
+                            <h4 class="college-name" id="setTopMargin">
+                                CGC Jhanjeri
+                            </h4>
+                            <span class="branch">
+                                Robotics & AI
+                            </span>
+                            <table class="cgpa-year" width="1000px">
+                                <tr>
+                                    <td>
+                                        CGPA: 8.5
+                                    </td>
+                                    <td align="center">
+                                        2022-2026
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- 12th -->
+                        <div class="twelth">
+                            <h4 class="twelth-name">
+                                IPS Kurali
+                            </h4>
+                            <span class="branch">
+                                Non-Medical
+                            </span>
+                            <table class="percentage-year" width="1000px">
+                                <tr>
+                                    <td>
+                                        Percentage: 95
+                                    </td>
+                                    <td align="center">
+                                        2021-2022
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- 10th -->
+                        <div class="tenth">
+                            <h4 class="tenth-name">
+                                IPS Kurali
+                            </h4>
+                            <span class="branch">
+                                Mathematics, Science, Social Science, Punjabi, Hindi
+                            </span>
+                            <table class="percentage-year" width="1000px">
+                                <tr>
+                                    <td>
+                                        Percentage: 85
+                                    </td>
+                                    <td align="center">
+                                        2019-2020
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <!-- Experience -->
+                <div class="experience">
+                    <div class="exp-title">
+                        <h2>EXPERINCE</h2>
+                    </div>
+                    <!-- Experience Information -->
+                    <div class="exp-info" id="setTopMargin">
+                        <ul>
+                            <li class="intership-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis est cum dolor omnis,
+                                libero
+                                eos. Magni nemo molestias eligendi dolores veniam magnam incidunt reiciendis quasi
+                                culpa,
+                                aspernatur voluptate consequatur odit modi ut cum adipisci illo iste saepe aut tempora
+                                debitis quisquam commodi nisi quidem. Excepturi perspiciatis perferendis ex distinctio
+                                similique.
+                            </li>
+                            <li class="intership-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur dicta eius ab
+                                dolore
+                                eveniet sed recusandae ut nam. Suscipit quod vero perspiciatis, nulla quo ad vel
+                                nesciunt,
+                                quidem quia recusandae cumque assumenda ratione cupiditate omnis? Architecto, veniam in,
+                                facere, pariatur dolorum perferendis adipisci accusamus nihil omnis iure rem!
+                                Accusantium!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Projects -->
+                <div class="projects">
+                    <div class="project-title">
+                        <h2>PROJECTS</h2>
+                    </div>
+                    <!-- Projects Information -->
+                    <div class="project" id="setTopMargin">
+                        <ul>
+                            <li class="project-1">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis est cum dolor omnis,
+                                libero
+                                eos. Magni nemo molestias eligendi dolores veniam magnam incidunt reiciendis quasi
+                                culpa,
+                                aspernatur voluptate consequatur odit modi ut cum adipisci illo iste saepe aut tempora
+                                debitis quisquam commodi nisi quidem. Excepturi perspiciatis perferendis ex distinctio
+                                similique.
+                            </li>
+                            <li class="project-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur dicta eius ab
+                                dolore
+                                eveniet sed recusandae ut nam. Suscipit quod vero perspiciatis, nulla quo ad vel
+                                nesciunt,
+                                quidem quia recusandae cumque assumenda ratione cupiditate omnis? Architecto, veniam in,
+                                facere, pariatur dolorum perferendis adipisci accusamus nihil omnis iure rem!
+                                Accusantium!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Skils -->
+                <div class="skills">
+                    <div class="skills-title">
+                        <h2>SKILLS</h2>
+                    </div>
+                    <!-- Skills Information -->
+                    <div class="skill" id="setTopMargin">
+                        <ul>
+                            <li class="skill-1">
+                                <h4 class="typeofSkill">Technical:</h4> Lorem, ipsum, dolor, sit, amet, consectetur,
+                                adipiscing, elit
+                            </li>
+                            <li class="skill-2">
+                                <h4 class="typeofSkill">Personal:</h4> Lorem, ipsum, dolor, sit, amet, consectetur,
+                                adipiscing, elit
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Ceritficates -->
+                <div class="certificates">
+                    <div class="certificate-title">
+                        <h2>CERTIFICATES</h2>
+                    </div>
+                    <!-- Certificates Information -->
+                    <div class="certificate" id="setTopMargin">
+                        <ul>
+                            <li class="certificate-1">
+                                Certificate 1
+                            </li>
+                            <li class="certificate-2">
+                                Certificate 2
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+<script>
+
+    const linkedin = document.querySelector('.linkedin');
+    const github = document.querySelector('.github');
+    const leetcode = document.querySelector('.leetcode');
+
+    linkedin.addEventListener('click', () => {
+        window.open('https://www.linkedin.com', '_blank');
+    });
+    github.addEventListener('click', () => {
+        window.open('https://github.com', '_blank');
+    });
+    leetcode.addEventListener('click', () => {
+        window.open('https://leetcode.com', '_blank');
+    });
+
+</script>
+
+</html>
